@@ -14,6 +14,8 @@ namespace dayz_gamma_script
         {
             while (true)
             {
+                // 0x11 ctrl
+                // check https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes for own custom keycodes
                 if (GetAsyncKeyState(0x11) < 0)
                 {
                     if (GetAsyncKeyState(0x25) < 0)
